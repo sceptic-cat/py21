@@ -9,8 +9,16 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{{ url_for('home_page') }}">Market</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tips
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('linux_page') }}">Linux</a></li>
+            <li><a class="dropdown-item" href="#">Python</a></li>
+            <li><a class="dropdown-item" href="#">PHP</a></li>
+            <li><a class="dropdown-item" href="#">JS</a></li>
+          </ul>
         </li>
 
       </ul>
